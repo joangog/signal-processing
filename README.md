@@ -1,4 +1,5 @@
 # signal-processing
+Matlab implementation of Pulse Code Modulation (PCM), Adaptive Delta Modulation (ADM)and Pulse Amplitude Modulation (PAM)
 
 **Pulse Code Modulation:**
 - Read file: 
