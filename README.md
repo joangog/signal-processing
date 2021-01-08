@@ -19,7 +19,8 @@ Matlab implementation of Pulse Code Modulation (PCM), Adaptive Delta Modulation 
 **Pulse Amplitude Modulation:**
 - Create random bit series: x=rand(1,10000); x(x>=0.5)=1; x(x<0.5)=0;
 - Execute Modulation: 
-  - 4-PAM: [~,BER(i),SER(i)]=pam(x,4,'regular',SNR(i));
+  - 4-PAM with regular encoding: [~,BER(i),SER(i)]=pam(x,4,'regular',SNR(i));
+  - 8-PAM with gray encoding: [~,BER(i),SER(i)]=pam(x,8,'gray',SNR(i)); 
   
   *Bit series is translated to symbols using gray code generation algorithm implemented in gray_code.m*
 - Plot Bit Error Rate and Symbol Error Rate: plot_ber_ser;
